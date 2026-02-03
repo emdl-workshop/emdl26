@@ -5,23 +5,30 @@ http://www.freecsstemplates.org
 Released for free under a Creative Commons Attribution 2.5 License
 -->
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<title>EMDL Workshop 2026</title>
-	<meta name="keywords" content="" />
-	<meta name="description" content="" />
-	<link href="default.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
-<div id="header">
-	<a href='https://www.sigmobile.org/mobisys/2026/'><img align="right" vertical-align="text-top" width="35%" style="margin: 00px 5px" src="images/mobisys26.png" /></a>
-	<h1><a href="index.html">7th International Workshop on<BR>Embedded and Mobile Deep Learning</a></h1>
-	<h2>Workshop co-located with <a href="https://www.sigmobile.org/mobisys/2026/">ACM MobiSys 2026</a></h2>
-	<h3>24-25 June '26 - Cambridge, UK</h3>
-</div>
-<div id="content">
-	<div id="colOne">
-<!-- DBW
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>EMDL Workshop 2026</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link href="default.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="header">
+      <a href="https://www.sigmobile.org/mobisys/2026/"
+        ><img align="right" vertical-align="text-top" width="35%" style="margin: 00px 5px" src="images/mobisys26.png"
+      /></a>
+      <h1>
+        <a href="index.html">7th International Workshop on<br />Embedded and Mobile Deep Learning</a>
+      </h1>
+      <h2>
+        Workshop co-located with
+        <a href="https://www.sigmobile.org/mobisys/2026/">ACM MobiSys 2026</a>
+      </h2>
+      <h3>24-25 June '26 - Cambridge, UK</h3>
+    </div>
+    <div id="content">
+      <div id="colOne">
+        <!-- DBW
 <h3 class="title">Accepted Papers</h3>
 
 <p>
@@ -121,7 +128,7 @@ Koen Goetschalckx, Bert Moons, Patrick Wambacq, Marian Verhelst (KU Leuven)</p>
 
 DBW-->
 
-<!-- DBW
+        <!-- DBW
 
 <h4 class="title">Accepted Poster and Demonstration Abstracts</h4>
 <p>
@@ -130,197 +137,237 @@ Still to be announced.
 
 DBW -->
 
-<script type="text/javascript">
-function displayDate(dt) {
-  var hour = dt.getHours();
-  var minute = dt.getMinutes();
-  var temp = '' + ((hour > 12) ? hour - 12 : hour);
-  if (hour == 0)
-    temp = '12';
-  temp += ((minute < 10) ? ':0' : ':') + minute;
-  temp += (hour >= 12) ? ' PM' : ' AM';
-  temp += (dt.getDay() - dt.getUTCDay() == 1 ? ' (July 1)' : '');
-  return temp;
-}
+        <script type="text/javascript">
+          function displayDate(dt) {
+            var hour = dt.getHours();
+            var minute = dt.getMinutes();
+            var temp = "" + (hour > 12 ? hour - 12 : hour);
+            if (hour == 0) temp = "12";
+            temp += (minute < 10 ? ":0" : ":") + minute;
+            temp += hour >= 12 ? " PM" : " AM";
+            temp += dt.getDay() - dt.getUTCDay() == 1 ? " (July 1)" : "";
+            return temp;
+          }
 
-function getTimezoneOffset() {
-  var offset = -(new Date()).getTimezoneOffset()/60;
-  var temp = "UTC" + (offset >= 0 ? "+" : "") + offset;
-  return temp;
-}
+          function getTimezoneOffset() {
+            var offset = -new Date().getTimezoneOffset() / 60;
+            var temp = "UTC" + (offset >= 0 ? "+" : "") + offset;
+            return temp;
+          }
 
-function getLocalTimezone() {
-  try {
-    return Intl.DateTimeFormat().resolvedOptions().timeZone + ", " + getTimezoneOffset();
-  }
-  catch(e) {
-    return getTimezoneOffset();
-  }
-}
+          function getLocalTimezone() {
+            try {
+              return Intl.DateTimeFormat().resolvedOptions().timeZone + ", " + getTimezoneOffset();
+            } catch (e) {
+              return getTimezoneOffset();
+            }
+          }
 
-function writeTimeRange(startTime, endTime) {
-  var startTimeObj = new Date("2026-06-01T" + startTime + ":00.000+00:00");
-  var endTimeObj = new Date("2026-07-01T" + endTime + ":00.000+00:00");
+          function writeTimeRange(startTime, endTime) {
+            var startTimeObj = new Date("2026-06-01T" + startTime + ":00.000+00:00");
+            var endTimeObj = new Date("2026-07-01T" + endTime + ":00.000+00:00");
 
-  return document.write(displayDate(startTimeObj) + " - " + displayDate(endTimeObj) + " (" + getLocalTimezone() +")");
-}
-</script>
+            return document.write(
+              displayDate(startTimeObj) + " - " + displayDate(endTimeObj) + " (" + getLocalTimezone() + ")",
+            );
+          }
+        </script>
 
-<h3 class="title">Technical Program - 1 July 2026</h3> <!--(BST time zone)</h3-->
-<p>
-<!--b><script type="text/javascript">writeTimeRange("16:20", "16:30")</script><noscript>16:20pm - 16:30pm (UTC time zone)</noscript>:<BR-->
-<b>9:20 AM - 9:30 AM (PST):<BR>
-Welcome and Opening Remarks</b>
-<BR>
-<!--Stylianos I. Venieris (Samsung AI)-->
-</p>
+        <h3 class="title">Technical Program - 1 July 2026</h3>
+        <!--(BST time zone)</h3-->
+        <p>
+          <!--b><script type="text/javascript">writeTimeRange("16:20", "16:30")</script><noscript>16:20pm - 16:30pm (UTC time zone)</noscript>:<BR-->
+          <b
+            >9:20 AM - 9:30 AM (PST):<br />
+            Welcome and Opening Remarks</b
+          >
+          <br />
+          <!--Stylianos I. Venieris (Samsung AI)-->
+        </p>
 
-<p>
-<!--b><script type="text/javascript">writeTimeRange("16:30", "17:30")</script><noscript>16.30pm - 17.30pm (UTC time zone)</noscript>:<BR-->
-<b>9:30 AM - 10:30 AM (PST):<BR>
-Keynote 1</b>
-<BR>
-Session Chair: Stylianos I. Venieris
-</p>
+        <p>
+          <!--b><script type="text/javascript">writeTimeRange("16:30", "17:30")</script><noscript>16.30pm - 17.30pm (UTC time zone)</noscript>:<BR-->
+          <b
+            >9:30 AM - 10:30 AM (PST):<br />
+            Keynote 1</b
+          >
+          <br />
+          Session Chair: Stylianos I. Venieris
+        </p>
 
-<table>
-	<tr valign='top'>
-		<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-		<td><img height=105 src='images/maria_gorlatova.jpg' /></td>
-		<td>
-		<div style="font-size: small;">
-		<b><a href='keynote.html#maria_gorlatova'>Intelligent Mobile Augmented Reality: Promise, Challenges, and Solutions</a></b>
-		<BR><BR>
-		<a href='https://maria.gorlatova.com/bio/'>Maria Gorlatova</a>
-		<BR>
-		<i>Duke University</i>
-		</div>
-		</td>
-		<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-	</tr>
-</table>
+        <table>
+          <tr valign="top">
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td><img height="105" src="images/maria_gorlatova.jpg" /></td>
+            <td>
+              <div style="font-size: small">
+                <b
+                  ><a href="keynote.html#maria_gorlatova"
+                    >Intelligent Mobile Augmented Reality: Promise, Challenges, and Solutions</a
+                  ></b
+                >
+                <br /><br />
+                <a href="https://maria.gorlatova.com/bio/">Maria Gorlatova</a>
+                <br />
+                <i>Duke University</i>
+              </div>
+            </td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+          </tr>
+        </table>
 
-<p>
-	<!--b><script type="text/javascript">writeTimeRange("17:30", "18:00")</script><noscript>17.30pm - 18.00pm (UTC time zone)</noscript>:<BR-->
-	<b>10:30 AM - 11:00 AM (PST):<BR>
-	Coffee Break</b>
-	<BR>
-</p>
+        <p>
+          <!--b><script type="text/javascript">writeTimeRange("17:30", "18:00")</script><noscript>17.30pm - 18.00pm (UTC time zone)</noscript>:<BR-->
+          <b
+            >10:30 AM - 11:00 AM (PST):<br />
+            Coffee Break</b
+          >
+          <br />
+        </p>
 
+        <p>
+          <!--b><script type="text/javascript">writeTimeRange("18:00", "18:30")</script><noscript>18.00pm - 18.30pm (UTC time zone)</noscript>:<BR-->
+          <b
+            >11:00 AM - 11:30 AM (PST):<br />
+            Session 1 - Efficient Mobile DNN Inference and Training</b
+          >
+          <br />
+          Session Chair: Stylianos I. Venieris
+        </p>
 
-<p>
-	<!--b><script type="text/javascript">writeTimeRange("18:00", "18:30")</script><noscript>18.00pm - 18.30pm (UTC time zone)</noscript>:<BR-->
-	<b>11:00 AM - 11:30 AM (PST):<BR>
-	Session 1 - Efficient Mobile DNN Inference and Training</b>
-	<BR>
-	Session Chair: Stylianos I. Venieris
-</p>
+        <table>
+          <tr valign="top">
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>
+              <div style="font-size: small">
+                <b
+                  ><a href="https://dl.acm.org/doi/10.1145/3539491.3539591"
+                    >Towards Edge-assisted Real-time 3D Segmentation of Large Scale LIDAR Point Clouds
+                  </a></b
+                >&nbsp;<br />Fraser McLean, Leyang Xue, Chris Xiaoxuan Lu, Mahesh Marina (<i>University of Edinburgh</i
+                >)
+                <br />
+              </div>
+            </td>
+          </tr>
+        </table>
 
-<table>
-	<tr valign='top'>
-		<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-		<td>
-		<div style="font-size: small;">
-		<b><a href="https://dl.acm.org/doi/10.1145/3539491.3539591">Towards Edge-assisted Real-time 3D Segmentation of Large Scale LIDAR Point Clouds
-		</a></b>&nbsp;<BR>Fraser McLean, Leyang Xue, Chris Xiaoxuan Lu, Mahesh Marina (<i>University of Edinburgh</i>)
-		<BR>
-		</div>
-		</td>
-	</tr>
-</table>
+        <br />
+        <table>
+          <tr valign="top">
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>
+              <div style="font-size: small">
+                <b
+                  ><a href="https://dl.acm.org/doi/10.1145/3539491.3539593"
+                    >Towards On-board Learning for Harvested Energy Prediction
+                  </a></b
+                >&nbsp;<br />
+                Koustabh Dolui, Ashok Samraj Thangarajan, Thibo Claes, Sam Michiels, Danny Hughes (<i>KU Leuven</i>)
+                <br />
+              </div>
+            </td>
+          </tr>
+        </table>
 
-<BR>
-<table>
-	<tr valign='top'>
-		<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-		<td>
-		<div style="font-size: small;">
-		<b><a href="https://dl.acm.org/doi/10.1145/3539491.3539593">Towards On-board Learning for Harvested Energy Prediction
-		</a></b>&nbsp;<BR>
-		Koustabh Dolui, Ashok Samraj Thangarajan, Thibo Claes, Sam Michiels, Danny Hughes
-		(<i>KU Leuven</i>)
-		<BR>
-		</div>
-		</td>
-	</tr>
-</table>
+        <p>
+          <!--b><script type="text/javascript">writeTimeRange("18:30", "19:30")</script><noscript>18.30pm - 19.30pm (UTC time zone)</noscript>:<BR-->
+          <b
+            >11:30 AM - 12:30 AM (PST):<br />
+            Keynote 2</b
+          >
+          <br />
+          Session Chair: Stefanos Laskaridis
+        </p>
 
-<p>
-	<!--b><script type="text/javascript">writeTimeRange("18:30", "19:30")</script><noscript>18.30pm - 19.30pm (UTC time zone)</noscript>:<BR-->
-	<b>11:30 AM - 12:30 AM (PST):<BR>
-	Keynote 2</b>
-	<BR>
-	Session Chair: Stefanos Laskaridis
-</p>
+        <table>
+          <tr valign="top">
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td><img height="105" src="images/nikolas_kourtellis.jpg" /></td>
+            <td>
+              <div style="font-size: small">
+                <b
+                  ><a href="keynote.html#nikolas_kourtellis"
+                    >Will it be Privacy or Utility? Can I have both (with Privacy-Preserving ML) please?</a
+                  ></b
+                >
+                <br /><br />
+                <a href="https://scholar.google.com/citations?user=Q5oWwiQAAAAJ&hl">Nikolas Kourtellis</a>
+                <br />
+                <i>Telefonica Research</i>
+              </div>
+            </td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+          </tr>
+        </table>
 
-<table>
-	<tr valign='top'>
-		<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-		<td><img height=105 src='images/nikolas_kourtellis.jpg' /></td>
-		<td>
-		<div style="font-size: small;">
-		<b><a href='keynote.html#nikolas_kourtellis'>Will it be Privacy or Utility? Can I have both (with Privacy-Preserving ML) please?</a></b>
-		<BR><BR>
-		<a href='https://scholar.google.com/citations?user=Q5oWwiQAAAAJ&hl'>Nikolas Kourtellis</a>
-		<BR>
-		<i>Telefonica Research</i>
-		</div>
-		</td>
-		<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-	</tr>
-</table>
+        <p>
+          <!--b><script type="text/javascript">writeTimeRange("19:30", "20:45")</script><noscript>19.30pm - 20.45pm (UTC time zone)</noscript>:<BR-->
+          <b
+            >12:30 AM - 13:45 AM (PST):<br />
+            Lunch Break</b
+          >
+          <br />
+        </p>
 
-<p>
-	<!--b><script type="text/javascript">writeTimeRange("19:30", "20:45")</script><noscript>19.30pm - 20.45pm (UTC time zone)</noscript>:<BR-->
-	<b>12:30 AM - 13:45 AM (PST):<BR>
-	Lunch Break</b>
-	<BR>
-</p>
+        <p>
+          <!--b><script type="text/javascript">writeTimeRange("20:45", "21:15")</script><noscript>20.45pm - 21.15pm (UTC time zone)</noscript>:<BR-->
+          <b
+            >13:45 AM - 14:15 AM (PST):<br />
+            Session 2 - Distributed and Federated Learning Systems</b
+          >
+          <br />
+          Session Chair: Stefanos Laskaridis
+        </p>
 
-<p>
-	<!--b><script type="text/javascript">writeTimeRange("20:45", "21:15")</script><noscript>20.45pm - 21.15pm (UTC time zone)</noscript>:<BR-->
-	<b>13:45 AM - 14:15 AM (PST):<BR>
-	Session 2 - Distributed and Federated Learning Systems</b>
-	<BR>
-	Session Chair: Stefanos Laskaridis
-</p>
+        <table>
+          <tr valign="top">
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>
+              <div style="font-size: small">
+                <b
+                  ><a href="https://dl.acm.org/doi/10.1145/3539491.3539592"
+                    >CloudyFL: A Cloudlet-Based Federated Learning Framework for Sensing User Behavior Using Wearable
+                    Devices
+                  </a></b
+                >&nbsp;<br />Qingyuan Gong, Hui Ruan, Yang Chen (<i>Fudan University, BirenTech Research</i>), Xiang Su
+                (<i>NTNU, University of Oulu</i>)
+                <br />
+              </div>
+            </td>
+          </tr>
+        </table>
 
-<table>
-	<tr valign='top'>
-		<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-		<td>
-		<div style="font-size: small;">
-		<b><a href="https://dl.acm.org/doi/10.1145/3539491.3539592">CloudyFL: A Cloudlet-Based Federated Learning Framework for Sensing User Behavior Using Wearable Devices
-		</a></b>&nbsp;<BR>Qingyuan Gong, Hui Ruan, Yang Chen (<i>Fudan University, BirenTech Research</i>), Xiang Su (<i>NTNU, University of Oulu</i>)
-		<BR>
-		</div>
-		</td>
-	</tr>
-</table>
+        <br />
+        <table>
+          <tr valign="top">
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>
+              <div style="font-size: small">
+                <b
+                  ><a href="https://dl.acm.org/doi/10.1145/3539491.3539594"
+                    >The role of compute nodes in privacy-aware decentralized AI
+                  </a></b
+                >&nbsp;<br />
+                Joana Tirana (<i>University College Dublin, University of Thessaly</i>), Christodoulos Pappas (<i
+                  >University of Thessaly</i
+                >), Dimitris Chatzopoulos (<i>University College Dublin</i>), Spyros Lalis, Manolis Vavalis (<i
+                  >University of Thessaly</i
+                >)
+                <br />
+              </div>
+            </td>
+          </tr>
+        </table>
 
-<BR>
-<table>
-	<tr valign='top'>
-		<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-		<td>
-		<div style="font-size: small;">
-		<b><a href="https://dl.acm.org/doi/10.1145/3539491.3539594">The role of compute nodes in privacy-aware decentralized AI
-		</a></b>&nbsp;<BR>
-		Joana Tirana (<i>University College Dublin, University of Thessaly</i>), Christodoulos Pappas (<i>University of Thessaly</i>), Dimitris Chatzopoulos (<i>University College Dublin</i>), Spyros Lalis, Manolis Vavalis (<i>University of Thessaly</i>)
-		<BR>
-		</div>
-		</td>
-	</tr>
-</table>
-
-<!--BR>
+        <!--BR>
 
 <p>
 <b><script type="text/javascript">writeTimeRange("14:10", "14:30")</script><noscript>2.10pm - 2.30pm (UTC time zone)</noscript>:<BR>
 Coffee Break</b>
 <BR>
 <!--Session Chair: Yunxin Liu (Microsoft Research)-->
-<!--/p>
+        <!--/p>
 
 <p>
 <b><script type="text/javascript">writeTimeRange("14:30", "15:30")</script><noscript>2.30pm - 3.30pm (UTC time zone)</noscript>:<BR>
@@ -351,7 +398,7 @@ Session Chair: Stylianos I. Venieris (Samsung AI)
 Lunch Break</b>
 <BR>
 <!--Session Chair: Yunxin Liu (Microsoft Research)-->
-<!--/p>
+        <!--/p>
 
 <p>
 <b><script type="text/javascript">writeTimeRange("16:00", "17:00")</script><noscript>4.00pm - 5.00pm (UTC time zone)</noscript>:<BR>
@@ -397,7 +444,7 @@ Qingqing Cao (<i>Stony Brook University</i>), Alexandru Eugen Irimiea (<i>Univer
 Coffee Break</b>
 <BR>
 <!--Session Chair: Yunxin Liu (Microsoft Research)-->
-<!--/p>
+        <!--/p>
 
 <p>
 <b><script type="text/javascript">writeTimeRange("17:20", "18:35")</script><noscript>5.20pm - 6.35pm (UTC time zone)</noscript>:<BR>
@@ -510,7 +557,7 @@ Erwei Wang, James J. Davis (<i>Imperial College London</i>), Daniele Moro, Piotr
 
 <p><b>10:30 - 11:00 Coffee Break</b></p-->
 
-<!--p>
+        <!--p>
 <b>15.30 - 16.15 Keynote 2</b>
 <BR>
 Session Chair: Marco Gruteser (Google, Rutgers University)
@@ -648,7 +695,7 @@ Chair: Stylianos I. Venieris (Samsung AI)
 <div style="font-size: small;">
 <li>Christos Bouganis (Imperial College London), Koen Helwegen (Plumerai), Aruna Balasubramanian (Stony Brook University), Poonam Yadav (University of York, UK) &nbsp;</li></div>
 </td-->
-<!--/tr>
+        <!--/tr>
 </table>
 
 
@@ -660,7 +707,7 @@ Chairs: Emily Glanz (Google), Weikang Song (Google)
 
 <!--h4>More TBA</h4-->
 
-<!--table>
+        <!--table>
 <tr valign='top'>
 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 <td>
@@ -727,8 +774,7 @@ Chairs: Emily Glanz (Google), Weikang Song (Google)
 
 <p><b>17:15 - 17:30 Closing Remarks</b></p-->
 
-
-<!--
+        <!--
 
 <h3 class="title">Technical Program</h3>
 <p>
@@ -958,70 +1004,76 @@ QualityDeepSense: Quality-Aware Deep Learning Framework for Internet of Things A
 <b>17:15 - 17:30 Town Hall</b>
 </p>
 -->
+      </div>
+      <div id="colTwo">
+        <ul>
+          <h2><a href="index.html">Home</a></h2>
+          <h2><a href="cfp.html">Call for Papers</a> <a href="cfp.pdf">[PDF]</a></h2>
+          <h2><a href="committee.html">Committees</a></h2>
+          <!-- <h2><a href="keynote.html">Keynote Talks</a></h2> -->
+          <h2><a href="attendee.html">Attendee Information</a></h2>
+          <!-- <h2><a href="program.html">Technical Program</a></h2> -->
+          <h2><a href="history.html">Prior Workshops</a></h2>
+          <h2><a href="submission.html">Submissions</a></h2>
+          <!-- <h2><a href="camera_ready.html">Camera-Ready Instructions</a></h2> -->
 
-	</div>
-	<div id="colTwo">
-		<ul>
-			<h2><a href="index.html">Home</a></h2>
-			<h2><a href="cfp.html">Call for Papers</a> <a href="cfp.pdf">[PDF]</a></h2>
-			<h2><a href="committee.html">Committees</a></h2>
-			<!-- <h2><a href="keynote.html">Keynote Talks</a></h2> -->
-			<h2><a href="attendee.html">Attendee Information</a></h2>
-			<!-- <h2><a href="program.html">Technical Program</a></h2> -->
-			<h2><a href="history.html">Prior Workshops</a></h2>
-			<h2><a href="submission.html">Submissions</a></h2>
-			<!-- <h2><a href="camera_ready.html">Camera-Ready Instructions</a></h2> -->
+          <br />
+          <li>
+            <h2>Keynote Speakers</h2>
+            <table>
+              <tr valign="top">
+                <td><img height="80" src="" /></td>
+                <td><a href="">TBD</a><br />TBD</td>
+              </tr>
+              <tr valign="top">
+                <td><img height="80" src="" /></td>
+                <td><a href="">TBD</a><br />TBD</td>
+              </tr>
+            </table>
+          </li>
 
-			<BR>
-			<li>
-				<h2>Keynote Speakers</h2>
-				<table>
-					<tr valign='top'>
-							<td><img height=80 src=''></td>
-					<td>
-						<a href=''>TBD</a><BR>TBD
-					</td>
-					</tr>
-					<tr valign='top'>
-							<td><img height=80 src=''></td>
-					<td>
-						<a href=''>TBD</a><BR>TBD
-					</td>
-					</tr>
-				</table>
-			</li>
-
-<table>
-<!--tr valign='top'><td><img height=80 src='images/Carlo.png' /></td>
+          <table>
+            <!--tr valign='top'><td><img height=80 src='images/Carlo.png' /></td>
 <td>
 <a href='https://scholar.google.com/citations?hl=en&user=T6dyV6gAAAAJ&view_op=list_works'>Carlo C. del Mundo</a><BR>Xnor.ai
 </td></tr-->
-</table>
+          </table>
 
-
-<BR>
-				<h2>Important Dates</h2>
-				<ul>
-					<li><i><strong>Paper Submission Deadline</strong></i>:<br>&nbsp;&nbsp;&nbsp;&nbsp;2026 April 9th - 11:59PM AoE</li>
-					<!-- <font color="0000FF">&nbsp;April 9th&nbsp; - 11:59PM AOE (Final)</font></li> -->
-					<li style="line-height: 5px"><br></li>
-					<li><i><strong>Author Notification</strong></i>: <BR>&nbsp;&nbsp;&nbsp;&nbsp;2026 April 23th - 11:59pm AoE</li>
-					<li style="line-height: 5px"><br></li>
-					<li><i><strong>Camera Ready Due</strong></i>:<BR>&nbsp;&nbsp;&nbsp;&nbsp;2026 April 30th - 11:59pm AoE</li>
-					<!-- <li style="line-height: 5px"><br></li>
+          <br />
+          <h2>Important Dates</h2>
+          <ul>
+            <li>
+              <i><strong>Paper Submission Deadline</strong></i
+              >:<br />&nbsp;&nbsp;&nbsp;&nbsp;2026 April 9th - 11:59PM AoE
+            </li>
+            <!-- <font color="0000FF">&nbsp;April 9th&nbsp; - 11:59PM AOE (Final)</font></li> -->
+            <li style="line-height: 5px"><br /></li>
+            <li>
+              <i><strong>Author Notification</strong></i
+              >: <br />&nbsp;&nbsp;&nbsp;&nbsp;2026 April 23th - 11:59pm AoE
+            </li>
+            <li style="line-height: 5px"><br /></li>
+            <li>
+              <i><strong>Camera Ready Due</strong></i
+              >:<br />&nbsp;&nbsp;&nbsp;&nbsp;2026 April 30th - 11:59pm AoE
+            </li>
+            <!-- <li style="line-height: 5px"><br></li>
 					<li><i><strong>WiP and Demo Deadline</strong></i>:<BR>&nbsp;&nbsp;&nbsp;&nbsp;2026 April 30th - 11:59PM AoE</li><li style="line-height: 5px"><br></li> -->
-					<li><i><strong>Workshop Event</strong></i>:<BR>&nbsp;&nbsp;&nbsp;&nbsp;June 24-25 (TBD), 2026</li>
-				</ul>
-		</ul>
-		<BR>
-		<img width="50%" style="display:block; margin-left: auto; margin-right: auto;" src="images/acm-logo2.png" />
-		<BR>
-		<img width="50%" style="display:block; margin-left: auto; margin-right: auto;" src="images/sigmobile.gif" />
-	</div>
-	<div style="clear: both;">&nbsp;</div>
-</div>
-<div id="footer">
-	<p></p>
-</div>
-</body>
+            <li>
+              <i><strong>Workshop Event</strong></i
+              >:<br />&nbsp;&nbsp;&nbsp;&nbsp;June 24-25 (TBD), 2026
+            </li>
+          </ul>
+        </ul>
+        <br />
+        <img width="50%" style="display: block; margin-left: auto; margin-right: auto" src="images/acm-logo2.png" />
+        <br />
+        <img width="50%" style="display: block; margin-left: auto; margin-right: auto" src="images/sigmobile.gif" />
+      </div>
+      <div style="clear: both">&nbsp;</div>
+    </div>
+    <div id="footer">
+      <p></p>
+    </div>
+  </body>
 </html>
