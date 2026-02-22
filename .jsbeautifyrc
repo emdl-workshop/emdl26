@@ -8,5 +8,9 @@
     "unformatted": ["b", "i", "u", "em", "strong", "font", "span"],
     "content_unformatted": ["pre", "code", "script", "style"],
     "extra_liners": []
+  },
+  "css": {
+    "indent_size": 2,
+    "indent_char": " "
   }
 }
