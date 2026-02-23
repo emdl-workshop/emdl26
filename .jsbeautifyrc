@@ -11,6 +11,15 @@
   },
   "css": {
     "indent_size": 2,
-    "indent_char": " "
+    "indent_char": " ",
+    "preserve_newlines": true,
+    "max_preserve_newlines": 1
+  },
+  "js": {
+    "indent_size": 2,
+    "indent_char": " ",
+    "wrap_line_length": 120,
+    "preserve_newlines": true,
+    "max_preserve_newlines": 1
   }
 }
